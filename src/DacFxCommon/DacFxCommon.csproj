@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>40ecbbf1-a42f-4bf4-981d-38c4bd453c3e</UserSecretsId>
+    <Authors>Mac Plewa</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.SqlServer.DacFx" Version="150.4897.1" />
+  </ItemGroup>
+
+</Project>

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportBacpac", "DacFxSamples\ExportBacpac.csproj", "{A7FE18D8-C124-403E-9322-8C34EBCC9428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExportBacpac", "ExportBacpac\ExportBacpac.csproj", "{A7FE18D8-C124-403E-9322-8C34EBCC9428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacFxCommon", "DacFxCommon\DacFxCommon.csproj", "{291DC824-2723-46FF-8F54-DB0EDACF61F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A7FE18D8-C124-403E-9322-8C34EBCC9428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7FE18D8-C124-403E-9322-8C34EBCC9428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7FE18D8-C124-403E-9322-8C34EBCC9428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291DC824-2723-46FF-8F54-DB0EDACF61F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291DC824-2723-46FF-8F54-DB0EDACF61F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291DC824-2723-46FF-8F54-DB0EDACF61F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291DC824-2723-46FF-8F54-DB0EDACF61F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

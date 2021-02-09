@@ -9,6 +9,10 @@ namespace DacFxCommon
 {
 	public static class Operations
 	{
+		/// <summary>
+		/// Exports a database to a bacpac file.
+		/// </summary>
+		/// <param name="opts">Configuration options.</param>
 		public static void RunExport(ExportOptions opts)
 		{
 			SqlConnectionStringBuilder csb = new SqlConnectionStringBuilder(opts.ConnectionString);
@@ -21,6 +25,24 @@ namespace DacFxCommon
 			}
 
 			ds.ExportBacpac(opts.TargetFile, opts.DatabaseName);
+		}
+
+		/// <summary>
+		/// Imports a database from a bacpac file.
+		/// </summary>
+		/// <param name="opts">Configuration options.</param>
+		public static void RunImport(ImportOptions opts)
+		{
+			SqlConnectionStringBuilder csb = new SqlConnectionStringBuilder(opts.ConnectionString);
+
+			DacServices ds = new DacServices(csb.ConnectionString);
+
+			if (opts.Verbose)
+			{
+				Console.WriteLine($"Importing {opts.TargetFile} to {opts.DatabaseName}");
+			}
+
+			ds.ImportBacpac(BacPackage.Load(opts.TargetFile), opts.DatabaseName);
 		}
 	}
 }
